@@ -1,7 +1,7 @@
 const { serializeError } = require('serialize-error')
 
 const getRequestPath = req => {
-  return req.path
+  return req.originalUrl
 }
 
 const getErrorMessage = err => {
