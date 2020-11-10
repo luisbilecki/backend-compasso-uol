@@ -6,7 +6,7 @@ module.exports = {
     query('state').isString().optional()
   ],
   findById: [
-    param('id').isString()
+    param('id').isMongoId()
   ],
   create: [
     body('name').isString(),

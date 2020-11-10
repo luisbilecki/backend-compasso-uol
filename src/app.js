@@ -41,6 +41,7 @@ class App {
 
   routes () {
     this.server.use('/cities', require('./routes/city'))
+    this.server.use('/customers', require('./routes/customer'))
     this.server.use(defaultErrorHandler)
   }
 }
